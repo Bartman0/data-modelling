@@ -51,9 +51,10 @@ INSERT INTO fact_sales_mini (customer_key, profile_key, sale_date, sale_amount) 
 SELECT * FROM dim_customer;
 SELECT * FROM dim_customer_profile;
 
-
+-- ====================================================================
 -- ## Final thoughts ##
 
 -- Result of Mini-Dimension Tables:
 -- The dim_customer table has only one row. The dim_customer_profile is very small and only contains 
 -- the 3 unique profiles that have existed across all customers.
+-- ====================================================================

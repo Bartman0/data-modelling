@@ -131,6 +131,7 @@ GROUP BY
 INSERT INTO fact_sales (product_id, amount, order_date)
 VALUES (104, 99.99, CURRENT_DATE); -- 'CURRENT_DATE' can be used directly.
 
+-- ====================================================================
 -- ## Final thoughts ##
 
 -- This approach is ideal for dimensions with stable, universal, and simple natural keys. Dates are the perfect example. 
@@ -140,3 +141,4 @@ VALUES (104, 99.99, CURRENT_DATE); -- 'CURRENT_DATE' can be used directly.
 -- This is because their natural keys (like an employee ID or product SKU) can change, be reassigned, or you might need to track 
 -- historical changes using Slowly Changing Dimensions (SCDs), which is managed far more effectively with meaningless, 
 -- integer surrogate keys.
+-- ====================================================================
