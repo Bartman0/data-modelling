@@ -14,3 +14,9 @@ The PostgreSQL database is also accessible through your host. You can use DBeave
 - user: postgres
 - password: postgres
 - database: postgres
+
+## Local running PostgreSQL database?
+
+Be aware that when you have a local PostgreSQL database instance running, you will connect to that one, instead of the instance in the dev container.
+Solution: **stop that service** before starting the dev container.
+More advanced solution: make the dev container instance accessible through a different port.
